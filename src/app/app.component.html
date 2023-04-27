@@ -1,0 +1,25 @@
+<div class="left">
+  <header class="header">
+    <solicy-header
+      (onAddClick)="onAdd()"
+      (onSortClick)="onSort()">
+    </solicy-header>
+  </header>
+  <section class="main">
+    <solicy-main
+      [cards]=cards
+      (deleteByUniqueValue)="onDelete($event)">
+    </solicy-main>
+  </section>
+  <footer class="footer">
+    <solicy-footer></solicy-footer>
+  </footer>
+</div>
+
+<div class="right">
+  <span>
+Press the "add card" button to add the new Card.
+Use the "sort cards" button to sort the Cards by the increase.
+Press an X icon on the top right ro delete them.
+  </span>
+</div>

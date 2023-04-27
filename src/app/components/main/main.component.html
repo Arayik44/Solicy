@@ -1,0 +1,7 @@
+<div class="container">
+  <solicy-card
+    class="card" *ngFor="let card of cards; trackBy:trackBy"
+    [cardNumber]="card.value"
+    (onDelete)="onDelete(card.value)"
+  ></solicy-card>
+</div>
